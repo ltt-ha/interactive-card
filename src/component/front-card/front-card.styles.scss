@@ -1,0 +1,46 @@
+.front-card-container {
+    height:250px;
+    width: 400px;
+    color: hsl(0, 0%, 100%);
+    display: grid;
+    background-image: url('../../assets/images/bg-card-front.png');
+    background-size:100%;
+    background-repeat:no-repeat;
+    margin-top: 200px;
+    margin-left: 200px;
+    // border-radius: 5%;
+    position:absolute;
+    .card-logo {
+        margin-top: 20px;
+        margin-left: 20px;
+        z-index: 1;
+    }
+    .in-card {
+        display:inline-flex;
+        position: absolute;
+    }
+    .card-number {
+        padding-top: 110px;
+        padding-left: 50px;
+        font-size: 30px;
+    }
+    .name {
+        padding-top: 180px;
+        padding-left: 50px;
+        font-size: 15px;
+    }
+    .valid-date {
+        padding-top: 180px;
+        padding-left: 300px;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 375px){ 
+    .front-card-container {
+        height:100%;
+        width: 400px;
+        margin-top: 180px;
+    margin-left: 20px;
+    }
+}
+

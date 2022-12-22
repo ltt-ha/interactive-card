@@ -1,0 +1,36 @@
+.back-card-container {
+    height:220px;
+    color: hsl(0, 0%, 100%);
+    width: 400px;
+    display:grid;
+    background-image: url('../../assets/images/bg-card-back.png');
+    background-size:100%;
+    background-repeat:no-repeat;
+    margin-top: 450px;
+    margin-left: 300px;
+    position: absolute;
+    .cvv-number {
+        display:inline-flex;
+        position: absolute;
+        padding-top: 95px;
+        padding-left: 300px;
+        font-size: 15px;
+    }
+    
+}
+@media screen and (max-width: 375px){ 
+    .back-card-container {
+        height:100%;
+        width: 400px;
+        margin-top: 50px;
+        margin-left: 70px;
+     
+        .cvv-number {
+            padding-top: 95px;
+            padding-left: 300px;
+            font-size: 15px;
+        }
+    }
+    
+}
+

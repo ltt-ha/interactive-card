@@ -1,0 +1,28 @@
+.card-confirm-container {
+    display:grid;
+    margin-top: 300px;
+    margin-left: 1000px;
+    position: absolute;
+    justify-items: center;
+    width: 400px;
+    .button {
+        width: inherit;
+    }
+    p {
+        color: hsl(279, 6%, 55%)
+    }
+}
+
+.icon {
+    display: block;
+    margin: auto;
+}
+
+@media screen and (max-width: 375px){
+    .card-confirm-container {
+        width: 100%;
+        // display:block;
+        margin-top: 450px;
+        margin-left: 60px;
+        position: absolute;
+}}

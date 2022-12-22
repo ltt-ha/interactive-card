@@ -1,0 +1,107 @@
+// .App {
+//   text-align: center;
+//   background-image: url('./assets/images/bg-main-desktop.png');
+//   background-repeat: repeat-y;
+//   background-size:40%;
+// }
+.main-container {
+  display:flex;
+  margin-top: 300px;
+  margin-left: 1000px;
+  position: absolute;
+}
+
+.hidden {
+  visibility: hidden;
+}
+.alert {
+  color:hsl(0, 100%, 66%);
+  padding: 0;
+  
+}
+.form-container .field-container:first-of-type {
+  grid-area: name;
+}
+
+.form-container .field-container:nth-of-type(2) {
+  grid-area: number;
+}
+
+.form-container .field-container:nth-of-type(3) {
+  grid-area: exp-mm;
+}
+
+.form-container .field-container:nth-of-type(4) {
+  grid-area: exp-yy;
+  
+}
+.form-container .field-container:nth-of-type(5) {
+  grid-area: CVC;
+}
+.form-container .button:first-of-type {
+  grid-area: button;
+}
+.field-container {
+  position: relative;
+  text-align: left;
+  margin-top: 10px;
+}
+input:focus {
+  outline-color: hsl(278, 94%, 30%)
+}
+
+.field-container input {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  margin-top: 3px;
+  margin-bottom: 0px;
+  padding: 5px;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 7px;
+  border: 1px solid hsl(270, 3%, 87%);
+  color: hsl(279, 6%, 55%)
+}
+
+
+
+.form-container {
+  display: grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 20px;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 90px 90px 90px 60px;
+  grid-template-areas: "name name name name""number number number number""exp-mm exp-yy CVC CVC""button button button button";
+  // max-width: 400px;
+  width: 420px;
+  padding: 20px;
+  
+}
+.button {
+  // border-radius: 10%;
+  margin-top: 20px;
+}
+
+label {
+  // padding-bottom: 5px;
+  // padding-top: 20px;
+  font-size: 13px;
+  // margin-top: 10px;
+  position:relative;
+  display: flex;
+  width: fit-content;
+  display: inline-block; 
+  margin-right: -100%;
+}
+@media screen and (max-width: 375px){
+  .main-container {
+      width: 100%;
+      display:block;
+      margin-top: 450px;
+      margin-left: 60px;
+      position: absolute;
+}
+
+}
+
